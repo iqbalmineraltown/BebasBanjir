@@ -61,5 +61,6 @@ if (isset($_POST['upload']) && $_FILES['userfile']['size'] > 0) {
 	echo $_POST['alamat'];
 	$sql = "INSERT INTO daerah_banjir (NAMA_WILAYAH, COMMENT, LATITUDE, LONGITUDE, picname, picsize, pictype, pic) values ('$address','$komen','$lat','$long','$fileName','$fileSize','$fileType','$content')";
 	mysql_query($sql);
+	echo "cot";
 }
 ?>
