@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 10, 2013 at 02:29 PM
+-- Generation Time: Dec 19, 2013 at 05:01 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -16,10 +16,8 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
-CREATE DATABASE siagabanjir;
-USE siagabanjir;
 --
--- Database: `test`
+-- Database: `siagabanjir`
 --
 
 -- --------------------------------------------------------
@@ -42,6 +40,7 @@ CREATE TABLE IF NOT EXISTS `bantuan` (
 --
 -- Table structure for table `daerah_banjir`
 --
+
 CREATE TABLE IF NOT EXISTS `daerah_banjir` (
   `ID` int(10) NOT NULL AUTO_INCREMENT,
   `NAMA_WILAYAH` varchar(50) NOT NULL,
@@ -100,8 +99,18 @@ INSERT INTO `posko` (`ID`, `NAMA_POSKO`, `LATITUDE`, `LONGITUDE`) VALUES
 CREATE TABLE IF NOT EXISTS `postingan` (
   `ID` int(10) NOT NULL AUTO_INCREMENT,
   `KONTEN` text NOT NULL,
+  `LEVEL` int(2) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `postingan`
+--
+
+INSERT INTO `postingan` (`ID`, `KONTEN`, `LEVEL`) VALUES
+(1, 'Buat yang menuju Tanah Abang, hati-hati lewat sini', 1),
+(2, 'Aman cuy lewat sini ^^b', 2),
+(3, 'adem bener deh jalanan sini, gak kayak daerah lain', 2);
 
 -- --------------------------------------------------------
 
