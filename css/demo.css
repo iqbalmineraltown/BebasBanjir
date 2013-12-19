@@ -46,7 +46,7 @@ footer, header, hgroup, menu, nav, section {
 }
 /* General Demo Style */
 body{
-	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-family: "Helvetica";
 	background: #333333;
 	font-weight: 400;
 	font-size: 15px;
@@ -130,23 +130,26 @@ header #map:hover{
 	height:30px;
 }
 #komen{
-	margin-left: 250px;
+	background: url(../images/feed/button-comment.png) no-repeat top left;
+	margin-left: 150px;
 	border: none;
 	color: #3c3c3c;
-	width:50px;
-	height:20px;
+	width:80px;
+	height:38px;
 }
 #rss{
+	background: url(../images/feed/button-rss.png) no-repeat top left;
 	border: none;
 	color: #3c3c3c;
-	width:50px;
-	height:20px;
+	width:80px;
+	height:38px;
 }
 #like{
+	background: url(../images/feed/button-like.png) no-repeat top left;
 	border: none;
 	color: #3c3c3c;
-	width:50px;
-	height:20px;
+	width:80px;
+	height:38px;
 }
 #fb{
 	background: url(../images/home/sign-facebook.png) no-repeat top left;
@@ -171,6 +174,8 @@ header #map:hover{
 	width: 100%;
 	height: 100%;
 	margin-left:300px;
+	position: relative;
+	clear: left;
 }
 #side{
 	margin-top: 20px;
@@ -210,10 +215,10 @@ header #map:hover{
 	padding: 25px;
 }
 #loginform2{
-	margin-top: 100px;
+	margin-top: 30px;
 	border-radius: 20px;
-	background-color: #00dded;
-	width: 500px;
+	background-color: #f8f8ff;
+	width: 525px;
 	height: 100%;
 	padding: 25px;
 	text-align: left;
@@ -233,14 +238,79 @@ header #map:hover{
 
 .create{
 	font-family: "Segoe UI";
-	margin:10px;
-	
+	margin:10px;	
 }
 td{
 	padding:10px;
 }
 .textarea{
 	vertical-align: left;
+	border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 100px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        padding:10px;
+}
+.kotakbantu{
+	width:55px;
+	height:55px;
+	background-color:#3c3c3c;
+	float:left;
+	border-radius:3px;
+}
+.kotakbantu:hover{
+	background-color:#00dded;
+}
+#dropdown{
+	border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 30px;
+        width: 150px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        padding:2px;
+}
+#textfield{
+	vertical-align: left;
+	border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 30px;
+        width: 435px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        padding:10px;
+}
+
+#textfield2{
+	vertical-align: left;
+	border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 10px;
+        width: 40px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        padding:10px;
+}
+#textfield3{
+	vertical-align: left;
+	border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 10px;
+        width: 100px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        padding:10px;
 }
 #pac-input {
         background-color: #fff;
@@ -269,7 +339,50 @@ td{
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
       }
 #map-canvas {
-        height: 200px;
+        height: 150px;
         margin: 0px;
         padding: 0px
+}
+#browse{
+		font-family: "Helvetica";
+		padding: 10px 50px 10px 50px;
+        color: #f8f8ff;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background: #3c3c3c;
+        width: 435px;
+}
+#buttonpost{
+		font-family: "Helvetica";
+		padding: 10px 50px 10px 50px;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background: #00dded;
+}
+#buttonpost2{
+		font-family: "Helvetica";
+		padding: 10px 30px 10px 30px;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background: #00dded;
+}
+#korban{
+	width:435px;
+}
+#bantuan{
+	width:435px;
+}
+#isi1{
+	clear: left;
 }

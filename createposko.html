@@ -113,19 +113,26 @@ google.maps.event.addDomListener(window, 'load', initialize);
                               <td id="Judul" style="text-align:center; font-size:24px; margin-top:10px;"><b>CREATE POSKO</b></td>
                             </tr>
                             <tr>
-                              <td><input type="text"></td>
+                              <td><input type="text" id="textfield" placeholder="NAME"></td>
                             </tr>
                             <tr>
                               <td>
-                                <input id="pac-input" class="controls" type="text" placeholder="Search Box"></input><div id="map-canvas"></div></td>
+                                <input id="pac-input" class="controls" type="text" placeholder="Search Box"></input><div id="map-canvas" style="height:250px"></div></td>
                             </tr>
                             <tr>
-                              <td>
-                                <textarea class="textarea" rows="4" cols="25"></textarea></td>
+                                <td><input type="text" id="textfield" placeholder="Jumlah Korban"></td>
+                            </tr>  
+                            <tr>
+                              <!--button-->
+                              <td><center><input id="buttonpost" type="submit" value="ADD DETAIL" ></input></center>
+                             </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="textfield" placeholder="Kontak"></td>
                             </tr>                               
                             <tr>
                               <!--button-->
-                              <td><center><input id="buttonpost" type="submit" value="POST" ></input></center>
+                              <td><center><input id="buttonpost" type="submit" value="SUBMIT" ></input></center>
                              </td>
                             </tr>
                           </table>
