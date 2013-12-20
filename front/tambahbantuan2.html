@@ -53,9 +53,9 @@
               // Create a marker for each place.
               var marker = new google.maps.Marker({
                 map: map,
+                icon: image,
                 title: place.name,
-                position: place.geometry.location,
-                draggable: true
+                position: place.geometry.location
               });
 
               markers.push(marker);
@@ -113,28 +113,18 @@ google.maps.event.addDomListener(window, 'load', initialize);
                               <td id="Judul" style="text-align:center; font-size:24px; margin-top:10px;"><b>CREATE POSKO</b></td>
                             </tr>
                             <tr>
-                              <td><input type="text" id="textfield" placeholder="NAME" name="namaposko"></td>
+                              <td><input type="text" id="textfield" placeholder="NAME"></td>
                             </tr>
                             <tr>
                               <td>
                                 <input id="pac-input" class="controls" type="text" placeholder="Search Box"></input><div id="map-canvas" style="height:250px"></div></td>
                             </tr>
                             <tr>
-                                <td><input type="text" id="textfield" placeholder="Jumlah Korban"></td>
-                            </tr>  
-                            <tr>
-                              <!--button-->
-                              <td><center><input id="buttonpost" type="submit" value="ADD DETAIL" name="addDetailPosko"></input></center>
-                             </td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" id="textfield" placeholder="Kontak"></td>
+                              <td>
+                                <textarea class="textarea" rows="4" cols="50" placeholder="DETAILS"></textarea></td>
                             </tr>                               
                             <tr>
                               <!--button-->
-							  <input type="hidden" name="javascriptOutPut1" id="javascriptOutPut1"/>
-                              <input type="hidden" name="javascriptOutPut2" id="javascriptOutPut2"/>
-                              <input type="hidden" name="dispatch" id="dispatch" value='createposko'/>
                               <td><center><input id="buttonpost" type="submit" value="SUBMIT" ></input></center>
                              </td>
                             </tr>
@@ -149,21 +139,3 @@ google.maps.event.addDomListener(window, 'load', initialize);
         </div>
     </body>
 </html>
-<?php
-	session_start();
-
-if (isset($_POST['upload'])) {
-	$_SESSION['createposko']['latitude'] = $_POST['javascriptOutPut2'];
-	$_SESSION['createposko']['longitude'] = $_POST['javascriptOutPut1'];
-	$_SESSION['createposko']['nama'] = $_POST['namaposko'];
-	$_SESSION['dispatch'] = $_POST['dispatch'];
-	header("Location: controller.php");
-	exit();
-	
-}
-
-if (isset($_POST['addDetailPosko'])) {
-	header("Location: addDetailKorban.html");
-	exit();
-}
-?>

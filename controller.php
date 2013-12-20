@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$action = $_REQUEST['dispatch'];
+	$action = $_SESSION['dispatch'];
 	
 	if($action == "createposko"){
 		$data = array();

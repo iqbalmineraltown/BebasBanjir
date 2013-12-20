@@ -26,7 +26,7 @@ mysql_select_db("siagabanjir");
                     <img src="images/feed/menu-feed.png">         
                 </div>                    
                 <div id="posko">
-                    <img src="images/feed/menu-help.png">
+                    <img src="images/feed/menu-help.png" onclick="location.href='viewallposko.php';">
                 </div>
                 <div id="map">
                     <img src="images/feed/menu-map.png">
